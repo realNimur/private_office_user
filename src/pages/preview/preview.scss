@@ -1,5 +1,8 @@
-.preview__children-list{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+.preview{
+  padding-top: 30px;
+  &__children-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }

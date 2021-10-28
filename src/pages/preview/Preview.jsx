@@ -4,18 +4,17 @@ import './preview.scss';
 
 const Preview = () => {
     const userData = JSON.parse(localStorage.getItem('userData'));
-    const {name, surname, age, patronymic, children} = userData;
     return (
-        <div className={""}>
+        <div className={"preview"}>
             {userData ? (
                 <>
                     <p>Персональные данные</p>
-                    <p style={{fontWeight: 'bold'}}>{surname} {name} {patronymic} , {age} лет</p>
-                    {children.length > 0 && (
+                    <p style={{fontWeight: 'bold'}}>{userData.surname} {userData.name} {userData.patronymic} , {userData.age} лет</p>
+                    {userData.children.length > 0 && (
                         <>
                             <p>Дети</p>
                             <div className="preview__children-list">
-                                {children.map((item) =>
+                                {userData.children.map((item) =>
                                     <PreviewChildrenItem key={item.id} name={item.nameChildren} age={item.ageChildren}/>
                                 )}
                             </div>
