@@ -9,7 +9,7 @@ const Preview = () => {
             {userData ? (
                 <>
                     <p>Персональные данные</p>
-                    <p style={{fontWeight: 'bold'}}>{userData.surname} {userData.name} {userData.patronymic} , {userData.age} лет</p>
+                    <p style={{fontWeight: 'bold'}}>{userData.surname} {userData.name} {userData.patronymic}{userData.age && (<span> , {userData.age} лет</span>)} </p>
                     {userData.children.length > 0 && (
                         <>
                             <p>Дети</p>

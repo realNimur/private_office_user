@@ -9,7 +9,7 @@ const PreviewChildrenItem = ({name, age}) => {
             backgroundColor: '#F1F1F1',
             marginBottom: '10px'
         }}>
-            {name} ,{age}
+            {name} , {age}
         </div>
     );
 };
