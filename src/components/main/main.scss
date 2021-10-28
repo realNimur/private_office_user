@@ -1,0 +1,29 @@
+.main{
+  flex-grow: 1;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  .user-data{
+    fieldset{
+      border: 1px solid #F1F1F1;
+      border-radius: 4px;
+      margin-bottom: 5px;
+      label{
+        font-size: 13px;
+        color: rgba(17, 17, 17, 0.48);
+      }
+      input{
+        color: #111111;
+        font-size: 14px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid transparent;
+        outline: none;
+        display: block;
+        &:focus{
+          border-bottom: 1px solid #F1F1F1;
+        }
+      }
+    }
+  }
+}
